@@ -130,7 +130,7 @@ app.use('/cart',cart);
 
 app.use('/',pages);
 
-var port = 3000;
+var port = process.env.PORT || 3000;
 app.listen(port,function(){
 console.log("server is runnning on port"+port);
 
