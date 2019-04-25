@@ -1,0 +1,23 @@
+<% include _layouts/header %>
+<% if (typeof cart !== "undefined") { %>
+
+  <table class=table table-striped>
+    <tr>
+      <th>Image</th>
+      <th>title </th>
+      <th>price</th>
+      <th>Quantity  </th>
+      <th></th>
+      <th>Subtotal</th>
+      </tr>
+    <% cart.forEach(function) {%>
+      <tr>
+        
+      </tr>
+      <% });%>
+        </table>
+      <% } else {%>
+        <h3 class="text-center "> your Cart is empty </h3>
+        <%}%>
+
+<% include _layouts/footer%>
